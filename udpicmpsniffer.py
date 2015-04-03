@@ -149,6 +149,7 @@ while True:
             pass
     else:
         binarypackettype = "00"
+        g.write(s_addr)
         g.write(' ')
         g.write('0')
         g.write(' ')
@@ -161,4 +162,3 @@ while True:
         g.write(str(binarypackettype))
         g.write('\n')
         pass
-
